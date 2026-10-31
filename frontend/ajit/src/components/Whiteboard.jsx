@@ -358,7 +358,7 @@ function Whiteboard({
     );
 
     const socket = new WebSocket(
-      `ws://localhost:3001/sync/${encodeURIComponent(boardId)}`
+      `ws://https://syncboard-cd0p.onrender.com/sync/${encodeURIComponent(boardId)}`
     );
 
     socketRef.current = socket;
