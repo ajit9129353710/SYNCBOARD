@@ -358,7 +358,7 @@ function Whiteboard({
     );
 
     const socket = new WebSocket(
-      `wss://https://syncboard-cd0p.onrender.com/sync/${encodeURIComponent(boardId)}`
+      `wss://syncboard-cd0p.onrender.com/sync/${encodeURIComponent(boardId)}`
     );
 
     socketRef.current = socket;
@@ -1186,7 +1186,6 @@ function Whiteboard({
         </div>
       </div>
 
-      {/* Live Participants */}
       <div className="live-users-panel">
 
         <div className="live-users-header">
